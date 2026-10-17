@@ -1,0 +1,2 @@
+# pragmata
+guia de pragmata
