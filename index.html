@@ -1,0 +1,805 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>PRAGMATA — Guía completa</title>
+<meta name="description" content="Guía spoiler de PRAGMATA en español: ruta por sectores con % de avance, jefes con nivel de firmware sugerido, armas, nodos de hackeo, coleccionables por sector, Zonas Rojas, Señal Desconocida y finales.">
+<meta name="theme-color" content="#070b14">
+<!-- Miniatura para WhatsApp / redes (ajusta la URL si cambias el nombre del repo) -->
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="Guías de hefestomar">
+<meta property="og:title" content="PRAGMATA — Guía completa con spoilers">
+<meta property="og:description" content="Ruta por sectores con % de avance, jefes, armas, hackeo, coleccionables, Zonas Rojas, Señal Desconocida y finales.">
+<meta property="og:url" content="https://hefestomar.github.io/PRAGMATA/">
+<meta property="og:image" content="https://hefestomar.github.io/PRAGMATA/og-image.jpg?v=1">
+<meta property="og:image:secure_url" content="https://hefestomar.github.io/PRAGMATA/og-image.jpg?v=1">
+<meta property="og:image:type" content="image/jpeg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:image:alt" content="PRAGMATA — Guía completa por @hefestomar">
+<meta property="og:locale" content="es_MX">
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="PRAGMATA — Guía completa con spoilers">
+<meta name="twitter:description" content="Ruta, jefes, armas, hackeo, coleccionables y finales.">
+<meta name="twitter:image" content="https://hefestomar.github.io/PRAGMATA/og-image.jpg?v=1">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='12' fill='%23070b14'/%3E%3Ccircle cx='32' cy='32' r='16' fill='%23d9e4f2'/%3E%3Ccircle cx='26' cy='27' r='4' fill='%23aab8cc'/%3E%3Ccircle cx='38' cy='38' r='3' fill='%23aab8cc'/%3E%3Ccircle cx='50' cy='14' r='3' fill='%2339d0ff'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;700&family=IBM+Plex+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+:root{
+  --bg:#eef3f9; --bg2:#e1e9f3; --card:#ffffff; --ink:#0d1726; --muted:#5a6b82;
+  --line:#cfdae8; --acc:#0077b6; --red:#c9184a; --gold:#9a6500; --chip:#e6eef8;
+  --shadow:0 1px 2px rgba(10,30,60,.06),0 8px 22px rgba(10,30,60,.06);
+}
+@media (prefers-color-scheme: dark){
+  :root:not([data-theme="light"]){
+    --bg:#070b14; --bg2:#0b1220; --card:#0f1726; --ink:#e6f0ff; --muted:#8fa3bf;
+    --line:#1e2b42; --acc:#39d0ff; --red:#ff4d6d; --gold:#ffcf5a; --chip:#16223a;
+    --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 26px rgba(0,0,0,.4);
+  }
+}
+:root[data-theme="dark"]{
+  --bg:#070b14; --bg2:#0b1220; --card:#0f1726; --ink:#e6f0ff; --muted:#8fa3bf;
+  --line:#1e2b42; --acc:#39d0ff; --red:#ff4d6d; --gold:#ffcf5a; --chip:#16223a;
+  --shadow:0 1px 2px rgba(0,0,0,.5),0 10px 26px rgba(0,0,0,.4);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:64px}
+body{margin:0;background:var(--bg);color:var(--ink);font:16px/1.55 "IBM Plex Sans",system-ui,sans-serif}
+a{color:var(--acc)}
+h1,h2,h3,h4{font-family:"Chakra Petch",system-ui,sans-serif;line-height:1.2;letter-spacing:.01em}
+h2{font-size:1.6rem;margin:0 0 .4rem}
+h2::before{content:"// ";color:var(--acc)}
+h3{font-size:1.12rem;margin:1.4rem 0 .5rem}
+.en{color:var(--muted);font-weight:400;font-size:.88em}
+.wrap{max-width:1100px;margin:0 auto;padding:0 16px}
+header.hero{position:relative;overflow:hidden;color:#e6f0ff;padding:44px 0 32px;background:radial-gradient(ellipse at 80% 10%,#16345a 0,#0a1830 38%,#05080f 78%)}
+.hero .earth{position:absolute;right:7%;top:26px;width:110px;height:110px;border-radius:50%;background:radial-gradient(circle at 35% 35%,#7fd4ff 0,#1e6fb0 45%,#0b2a52 75%);box-shadow:0 0 60px 10px rgba(57,208,255,.25)}
+.hero .earth::after{content:"";position:absolute;inset:18% 30% 40% 22%;border-radius:40% 60% 50% 50%;background:#3f9d6a;opacity:.85}
+.hero .wrap{position:relative;z-index:1}
+.hero .kicker{color:#7fe3ff;font-weight:700;letter-spacing:.16em;font-size:.78rem;text-transform:uppercase;font-family:"Chakra Petch",sans-serif}
+.hero h1{font-size:clamp(2.4rem,8vw,4.2rem);margin:.15rem 0 0;letter-spacing:.14em;font-weight:700}
+.hero p{max-width:660px;color:#c4d4ea}
+.pills{display:flex;flex-wrap:wrap;gap:8px;margin-top:14px}
+.pill{background:rgba(127,227,255,.08);border:1px solid rgba(127,227,255,.25);padding:4px 10px;border-radius:999px;font-size:.85rem}
+@media(max-width:600px){.hero .earth{width:64px;height:64px;right:-8px;top:64px;opacity:.6}}
+nav.toc{position:sticky;top:0;z-index:5;background:var(--bg2);border-bottom:1px solid var(--line)}
+nav.toc .wrap{display:flex;gap:4px;overflow-x:auto;padding-top:8px;padding-bottom:8px;scrollbar-width:none}
+nav.toc a{white-space:nowrap;text-decoration:none;color:var(--ink);font-weight:600;font-size:.9rem;padding:6px 10px;border-radius:8px}
+nav.toc a:hover{background:var(--chip)}
+#themeBtn{margin-left:auto;border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:8px;padding:4px 10px;cursor:pointer;font:inherit;font-size:.85rem;white-space:nowrap}
+section{padding:34px 0;border-bottom:1px solid var(--line)}
+.lead{color:var(--muted);margin:.2rem 0 1rem}
+.card{background:var(--card);border:1px solid var(--line);border-radius:14px;padding:16px;box-shadow:var(--shadow)}
+a.card{text-decoration:none;color:var(--ink)}a.card b{color:var(--acc)}
+.grid{display:grid;gap:14px}
+@media(min-width:760px){.g2{grid-template-columns:1fr 1fr}.g3{grid-template-columns:repeat(3,1fr)}}
+.youare{border-left:4px solid var(--acc)}
+.tbl{width:100%;border-collapse:collapse;font-size:.92rem}
+.tbl th{text-align:left;font-size:.74rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);border-bottom:2px solid var(--line);padding:8px}
+.tbl td{border-bottom:1px solid var(--line);padding:8px;vertical-align:top}
+.tbl tr:last-child td{border-bottom:0}
+.scroll{overflow-x:auto;-webkit-overflow-scrolling:touch;border-radius:14px;border:1px solid var(--line);background:var(--card);box-shadow:var(--shadow)}
+.scroll .tbl{min-width:680px}
+#bossTbl{min-width:980px}#enemyTbl,#weapTbl{min-width:760px}
+.tag{display:inline-block;font-size:.72rem;font-weight:700;padding:1px 7px;border-radius:999px;background:var(--chip);color:var(--ink);margin:1px 2px 1px 0}
+.tag.r{background:var(--red);color:#fff}.tag.a{background:var(--acc);color:#04121c}.tag.g{background:var(--gold);color:#1a1000}
+.num{font-variant-numeric:tabular-nums;font-weight:700}
+.bar{height:10px;background:var(--chip);border-radius:999px;overflow:hidden;margin-top:4px}
+.bar i{display:block;height:100%;background:linear-gradient(90deg,var(--acc),#b9f2ff);transition:width .4s}
+details.step{background:var(--card);border:1px solid var(--line);border-radius:14px;margin:10px 0;box-shadow:var(--shadow)}
+details.step.done{opacity:.72}
+details.step summary{list-style:none;cursor:pointer;padding:12px 14px;display:flex;gap:12px;align-items:center}
+details.step summary::-webkit-details-marker{display:none}
+.stepn{flex:0 0 38px;height:38px;border-radius:10px;background:var(--acc);color:#04121c;display:grid;place-items:center;font-family:"Chakra Petch",sans-serif;font-weight:700}
+details.step.done .stepn{background:var(--chip);color:var(--muted)}
+.sumt{flex:1;min-width:0}.sumt b{display:block}.sumt small{color:var(--muted)}
+.pct{font-weight:700;color:var(--acc);white-space:nowrap;font-family:"Chakra Petch",sans-serif}
+.stepbody{padding:0 16px 14px}
+.stepbody ol,.stepbody ul{padding-left:20px;margin:.3rem 0}
+.chk{display:flex;gap:8px;align-items:flex-start;margin:8px 0 0}
+.chk input{margin-top:3px;accent-color:var(--acc);width:18px;height:18px}
+.sechead{margin:22px 0 4px;font-family:"Chakra Petch",sans-serif;color:var(--muted);text-transform:uppercase;letter-spacing:.12em;font-size:.8rem}
+.note{font-size:.86rem;color:var(--muted)}
+.warn{background:var(--chip);border:1px dashed var(--acc);border-radius:12px;padding:10px 12px;font-size:.92rem;margin-bottom:12px}
+.filter{display:flex;flex-wrap:wrap;gap:6px;margin:10px 0}
+.filter button{border:1px solid var(--line);background:var(--card);color:var(--ink);border-radius:999px;padding:4px 12px;font:inherit;font-size:.85rem;cursor:pointer}
+.filter button.on{background:var(--acc);color:#04121c;border-color:var(--acc)}
+.big{font-size:2rem;font-family:"Chakra Petch",sans-serif;font-weight:700;color:var(--acc)}
+.kpis{display:grid;grid-template-columns:repeat(2,1fr);gap:10px}
+@media(min-width:760px){.kpis{grid-template-columns:repeat(4,1fr)}}
+.kpi{background:var(--card);border:1px solid var(--line);border-radius:12px;padding:12px;text-align:center}
+.kpi small{display:block;color:var(--muted)}
+.spoiler{filter:blur(6px);cursor:pointer;transition:filter .25s}
+.spoiler.show{filter:none}
+.mapsvg{width:100%;height:auto;display:block;min-width:760px}
+.mapsvg text{font-family:"IBM Plex Sans",sans-serif}
+footer{padding:30px 0 50px;color:var(--muted);font-size:.9rem}
+/* ---- efectos ---- */
+#motesCv{position:fixed;inset:0;width:100vw;height:100vh;pointer-events:none;z-index:4}
+.scene{padding:0;overflow:hidden;margin:0 auto 14px;max-width:780px}
+.scene canvas{display:block;width:100%;height:auto;aspect-ratio:192/72;image-rendering:pixelated;image-rendering:crisp-edges;cursor:pointer;background:#05080f}
+.scene .cap{padding:10px 14px;display:flex;flex-wrap:wrap;gap:4px 12px;align-items:baseline;justify-content:space-between}
+.scene .cap b{font-family:"Chakra Petch",sans-serif;color:var(--acc)}
+.scene .cap span{color:var(--muted);font-size:.9rem}
+@media (prefers-reduced-motion: reduce){#motesCv{display:none}}
+</style>
+</head>
+<body>
+<canvas id="motesCv" aria-hidden="true"></canvas>
+<header class="hero">
+  <div class="earth" aria-hidden="true"></div>
+  <div class="wrap">
+    <div class="kicker">Guía paso a paso · Contiene spoilers</div>
+    <h1>PRAGMATA</h1>
+    <p>La Cuna (<i>The Cradle</i>), base minera en la Luna. Hugh y Diana contra IDUS, la IA que se volvió hostil. Ruta por sectores con porcentaje de avance, jefes con nivel de firmware sugerido, armas, hackeo, coleccionables, Zonas Rojas, Señal Desconocida y finales.</p>
+    <div class="pills">
+      <span class="pill">PS5 · Xbox Series · PC · Switch 2</span>
+      <span class="pill">Capcom · RE Engine</span>
+      <span class="pill">Historia ≈ 12–15 h</span>
+      <span class="pill">100 % ≈ 30 h</span>
+    </div>
+  </div>
+</header>
+
+<nav class="toc" aria-label="Secciones">
+  <div class="wrap">
+    <a href="#avance">Avance</a><a href="#ruta">Ruta</a><a href="#jefes">Jefes</a><a href="#enemigos">Enemigos</a>
+    <a href="#armas">Armas</a><a href="#hackeo">Hackeo</a><a href="#mejoras">Mejoras</a><a href="#coleccionables">Coleccionables</a>
+    <a href="#zonasrojas">Zonas Rojas</a><a href="#refugio">Refugio</a><a href="#mapa">Mapa</a><a href="#postgame">Postgame</a><a href="#finales">Finales</a><a href="#fuentes">Fuentes</a>
+    <button id="themeBtn" type="button" aria-label="Cambiar tema">◐ Tema</button>
+  </div>
+</nav>
+
+<main class="wrap">
+
+<!-- ============ AVANCE ============ -->
+<section id="avance">
+  <h2>Tu avance</h2>
+  <p class="lead">Marca cada tramo de la <a href="#ruta">ruta</a> al terminarlo. La escena, el porcentaje y tu siguiente objetivo se actualizan solos y se guardan en este navegador.</p>
+  <div class="card scene">
+    <canvas id="sceneCv" width="192" height="72" aria-label="Escena pixel art del sector en curso" title="Toca la escena para liberar fibraluna"></canvas>
+    <div class="cap"><b id="sceneLbl">Sector en curso</b><span id="sceneSub"></span></div>
+  </div>
+  <div class="grid g2">
+    <div class="card youare">
+      <div class="big"><span id="pctTotal">0</span>%</div>
+      <div class="bar"><i id="barTotal" style="width:0"></i></div>
+      <p class="note">Avance de la historia principal (créditos = 100 %). El postgame tiene su propia barra.</p>
+      <div id="nextBox"></div>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Postgame: Señal Desconocida <span class="en">(Unknown Signal)</span></h3>
+      <div class="big" style="font-size:1.5rem"><span id="pctPost">0</span>%</div>
+      <div class="bar"><i id="barPost" style="width:0"></i></div>
+      <div id="postList" style="margin-top:10px"></div>
+    </div>
+  </div>
+  <div class="kpis" style="margin-top:14px">
+    <div class="kpi"><span class="big">6</span><small>Sectores + Refugio</small></div>
+    <div class="kpi"><span class="big">9</span><small>Jefes y subjefes</small></div>
+    <div class="kpi"><span class="big">16</span><small>Armas / unidades</small></div>
+    <div class="kpi"><span class="big">8 + 5</span><small>Nodos · modos de hackeo</small></div>
+    <div class="kpi"><span class="big">184</span><small>Coleccionables</small></div>
+    <div class="kpi"><span class="big">30</span><small>Simulaciones de entrenamiento</small></div>
+    <div class="kpi"><span class="big">16</span><small>Memorias REM</small></div>
+    <div class="kpi"><span class="big">36</span><small>Trofeos</small></div>
+  </div>
+</section>
+
+<!-- ============ RUTA ============ -->
+<section id="ruta">
+  <h2>Ruta paso a paso</h2>
+  <p class="lead">19 tramos de la historia. El % es el avance acumulado al terminar cada tramo, calculado por la duración aproximada de cada sector.</p>
+  <div id="steps"></div>
+</section>
+
+<!-- ============ JEFES ============ -->
+<section id="jefes">
+  <h2>Jefes</h2>
+  <p class="lead">En PRAGMATA no hay nivel de personaje: el poder viene del <b>Actualizador de firmware</b> (<i>Firmware Updater</i>) del Refugio, que sube <b>Traje</b> (vida/defensa), <b>Unidad principal</b> (daño del arma base) y <b>Hackeo</b> (daño y duración de ABIERTO). El tope sube con cada licencia del Refugio: <b>9 → 13 → 17 → 20</b>.</p>
+  <div class="warn">⚠️ Los niveles de firmware sugeridos son <b>estimaciones</b> a partir del tope disponible en cada sector; el juego no marca un nivel recomendado. Si vas al tope de tu licencia, vas bien.</div>
+  <div class="scroll"><table class="tbl" id="bossTbl"></table></div>
+  <p class="note">Tip general: el hackeo completo hace mucho más daño que los hackeos rápidos; activa la <b>Sobrecarga</b> de Diana cuando el jefe ya esté aturdido, no antes, y esquiva hacia los lados (los misiles persiguen).</p>
+</section>
+
+<!-- ============ ENEMIGOS ============ -->
+<section id="enemigos">
+  <h2>Enemigos</h2>
+  <p class="lead">Casi todos los robots tienen blindaje: <b>Diana hackea</b> para abrir puntos débiles y <b>Hugh dispara</b>. Peligro: ● bajo · ●● medio · ●●● alto.</p>
+  <div class="filter" id="enemyFilter"></div>
+  <div class="scroll"><table class="tbl" id="enemyTbl"></table></div>
+  <p class="note">Los nombres de enemigos en español pueden variar entre el doblaje de España y el latino; el nombre en inglés entre paréntesis es el de referencia.</p>
+</section>
+
+<!-- ============ ARMAS ============ -->
+<section id="armas">
+  <h2>Armas y unidades (16)</h2>
+  <p class="lead">Hugh lleva 1 <b>unidad principal</b> y ranuras de <span class="tag r">ataque</span>, <span class="tag a">táctica</span> y <span class="tag g">defensiva</span>. Los planos (<i>blueprints</i>) se recogen en el mapa y se imprimen en la <b>Impresora de unidades</b> del Refugio con filuna (<i>Lim</i>) y lúnum puro.</p>
+  <div class="filter" id="weapFilter"></div>
+  <div class="scroll"><table class="tbl" id="weapTbl"></table></div>
+  <p class="note">El trofeo <i>Can't Stop, Won't Stop</i> pide imprimir todas las armas, nodos y habilidades disponibles durante la historia (nivel 1 basta).</p>
+</section>
+
+<!-- ============ HACKEO ============ -->
+<section id="hackeo">
+  <h2>Hackeo, nodos y protocolos</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3 style="margin-top:0">Cómo funciona</h3>
+      <ul>
+        <li>Mueve el cursor por la cuadrícula hasta el icono verde <b>EXE</b>; pasar por nodos azules <b>ABIERTO</b> (<i>Open</i>) sube daño y duración.</li>
+        <li>Evita los <b>nodos rojos de fallo</b>: rompen el hackeo.</li>
+        <li>El hackeo es en tiempo real: Hugh sigue esquivando mientras Diana trabaja.</li>
+        <li>Llenar la barra de Diana activa la <b>Sobrecarga</b> (<i>Overdrive Protocol</i>): expone, inmoviliza y daña a los enemigos cercanos.</li>
+        <li>Tras el Centro de Pragmática Experimental se convierte en <b>Protocolo de Eliminación</b> (<i>Deletion Protocol</i>): también limpia fibra muerta y encoge la cuadrícula.</li>
+        <li><b>Disparo crítico</b>: con la barra morada llena, un enemigo débil muestra un nodo de remate.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Modos de hackeo <span class="en">(Hacking Modes)</span></h3>
+      <table class="tbl">
+        <tr><th>Modo</th><th>Costo</th><th>Para qué</th></tr>
+        <tr><td><b>Ofensivo</b> <span class="en">(Offense)</span></td><td>400</td><td>Más daño por hackeo (trofeo de 3000 de daño)</td></tr>
+        <tr><td><b>Combustión</b> <span class="en">(Combust)</span></td><td>500</td><td>Sobrecalienta rápido → disparos críticos; recomendado contra el jefe final</td></tr>
+        <tr><td><b>Golpe</b> <span class="en">(Strike)</span></td><td>800</td><td>Favorece el daño de disparo tras abrir</td></tr>
+        <tr><td><b>Híbrido</b> <span class="en">(Hybrid)</span></td><td>800</td><td>Equilibrio entre hackeo y disparo</td></tr>
+        <tr><td><b>Impulso</b> <span class="en">(Boost)</span></td><td>800</td><td>Llena antes la barra de Sobrecarga</td></tr>
+      </table>
+    </div>
+  </div>
+  <h3>Nodos de hackeo (8)</h3>
+  <div class="scroll"><table class="tbl" id="nodeTbl"></table></div>
+</section>
+
+<!-- ============ MEJORAS ============ -->
+<section id="mejoras">
+  <h2>Mejoras y habilidades</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3 style="margin-top:0">Habilidades (Impresora de unidades)</h3>
+      <table class="tbl" id="abilTbl"></table>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Prioridades de mejora</h3>
+      <ol>
+        <li><b>Traje (vida)</b> y <b>daño de hackeo</b> primero; son lo que más pesa en Lunático.</li>
+        <li><b>Escáner de objetos</b> (<i>Object Scan</i>, 150) en cuanto se desbloquee tras el 2.º jefe: marca cajas de seguridad, REM y escotillas.</li>
+        <li><b>Propulsores</b> (cargas de esquiva) y <b>Reparación</b>.</li>
+        <li>Gasta <b>lúnum puro</b> en Disparo crítico, Autohackeo y ranuras de nodo; luego en el nivel máximo de tus armas favoritas.</li>
+        <li><b>Ranuras de módulo</b> hasta 6: los mods cambian mucho tu build.</li>
+      </ol>
+      <h3>Costo del firmware</h3>
+      <p class="note">Se paga con <b>componentes de mejora</b> (<i>Upgrade Components</i>), que están por todo el mapa y en cajas de seguridad. Del nivel 2 al 20 cuesta de 1 a 10 componentes por nivel.</p>
+      <table class="tbl">
+        <tr><th>Licencia del Refugio</th><th>Se obtiene</th><th>Tope firmware</th></tr>
+        <tr><td>Nivel 0</td><td>Inicio</td><td class="num">9</td></tr>
+        <tr><td>Nivel 1</td><td>Guardián de Sector</td><td class="num">9</td></tr>
+        <tr><td>Nivel 2</td><td>Creador</td><td class="num">13</td></tr>
+        <tr><td>Nivel 3</td><td>Guardián del Jardín</td><td class="num">17</td></tr>
+        <tr><td>Nivel 4</td><td>Excavador Lunar</td><td class="num">20</td></tr>
+        <tr><td>Nivel 5</td><td>Postgame</td><td>Armas a nivel 8 + último panel de sellos</td></tr>
+      </table>
+    </div>
+  </div>
+  <h3>Módulos (22)</h3>
+  <div class="scroll"><table class="tbl" id="modTbl"></table></div>
+</section>
+
+<!-- ============ COLECCIONABLES ============ -->
+<section id="coleccionables">
+  <h2>Coleccionables por sector (184)</h2>
+  <p class="lead">El 100 % de cada sector cuenta todo menos las Mini Cabin. Todo se puede recoger después de la historia desde el modo Señal Desconocida. Algunos piden volver con el <b>Supresor de Filuna</b> (sector 2) o la <b>Depuración</b> (sector 5).</p>
+  <div class="scroll"><table class="tbl" id="colTbl"></table></div>
+  <h3>Qué es cada cosa</h3>
+  <div class="grid g3">
+    <div class="card"><b>Mini Cabin</b> <span class="en">(Mini Cabins)</span><br><span class="note">Figuritas ocultas; las oyes cerca y hay que dispararles. 3 por sector, 15 en total (trofeo dorado).</span></div>
+    <div class="card"><b>Escotillas de escape</b> <span class="en">(Escape Hatches)</span><br><span class="note">Viaje rápido al Refugio y punto de control; curan a Hugh. Algunas se activan al volver a la sala del jefe.</span></div>
+    <div class="card"><b>Cajas de seguridad</b> <span class="en">(Safe Boxes)</span><br><span class="note">Filuna, componentes de mejora o monedas de Cabin. No se rellenan.</span></div>
+    <div class="card"><b>Lúnum puro</b> <span class="en">(Pure Lunum)</span><br><span class="note">Mejoras de alto nivel y habilidades clave. Muchos están en Zonas Rojas.</span></div>
+    <div class="card"><b>Memorias REM</b> <span class="en">(REM)</span><br><span class="note">Regalos para Diana: subes el vínculo y te da 4 dibujos.</span></div>
+    <div class="card"><b>Módulos</b> <span class="en">(Mods)</span><br><span class="note">Cofres azules grandes; pasivas para tu build.</span></div>
+    <div class="card"><b>Extensores de memoria</b> <span class="en">(Storage Expanders)</span><br><span class="note">Más capacidad para Diana (5).</span></div>
+    <div class="card"><b>Portacartuchos</b> <span class="en">(Cartridge Holders)</span><br><span class="note">Más cartuchos de reparación (2).</span></div>
+    <div class="card"><b>Datos de entrenamiento</b> <span class="en">(Training Data)</span><br><span class="note">Desbloquean simulaciones de Cabin (6).</span></div>
+  </div>
+  <h3>REM conocidas</h3>
+  <div class="scroll"><table class="tbl" id="remTbl"></table></div>
+</section>
+
+<!-- ============ ZONAS ROJAS ============ -->
+<section id="zonasrojas">
+  <h2>Zonas Rojas <span class="en">(Red Zones)</span></h2>
+  <p class="lead">Arenas cerradas con oleadas que se abren con <b>llaves de compuerta roja</b> (<i>Red Gate Keys</i>) de los paneles de sellos de Cabin. Dan lúnum puro, módulos y extensores. El trofeo <i>Red-Zoned and Loving It</i> sale con la primera; el 100 % las pide todas.</p>
+  <div class="scroll"><table class="tbl" id="rzTbl"></table></div>
+</section>
+
+<!-- ============ REFUGIO ============ -->
+<section id="refugio">
+  <h2>El Refugio <span class="en">(Shelter)</span></h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3 style="margin-top:0">Estaciones</h3>
+      <ul>
+        <li><b>Impresora de unidades</b> <span class="en">(Unit Printer)</span>: armas, nodos, modos y habilidades.</li>
+        <li><b>Actualizador de firmware</b> <span class="en">(Firmware Updater)</span>: Traje, Unidad principal y Hackeo.</li>
+        <li><b>Diana</b>: platica con ella (trofeo <i>Small Talk</i>), dale REM (<i>For Me?</i>), juega a las escondidas (<i>Peekaboo</i>).</li>
+        <li><b>Club de sellos de Cabin</b> <span class="en">(Cabin's Stamp Club)</span>: tienda de monedas de Cabin y paneles tipo bingo.</li>
+        <li><b>Cápsula de simulación</b>: 30 simulaciones de entrenamiento.</li>
+        <li>Vestuario con trajes de Hugh y Diana.</li>
+      </ul>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Paneles de sellos de Cabin</h3>
+      <table class="tbl">
+        <tr><th>Panel</th><th>Monedas</th><th>Premios destacados</th></tr>
+        <tr><td>Aprendiz <span class="en">(Trainee)</span></td><td class="num">9</td><td>Nodo Parálisis (<i>Freeze</i>)</td></tr>
+        <tr><td>Socio <span class="en">(Associate)</span></td><td class="num">16</td><td>Nodo Disruptor (<i>Expose</i>), Colmena de drones</td></tr>
+        <tr><td>Especialista <span class="en">(Specialist)</span></td><td class="num">16</td><td>Nodo Drenador (<i>Drain</i>), Generador de código</td></tr>
+        <tr><td>Director <span class="en">(Director)</span></td><td class="num">16</td><td>Nodo Encadenador (<i>Chain</i>), Mina de hackeo</td></tr>
+        <tr><td>Final (Refugio 5)</td><td>—</td><td>Postgame</td></tr>
+      </table>
+      <p class="note">Antes de gastar monedas en la tienda, consigue las llaves rojas, portacartuchos y bingos de los paneles. Las monedas salen de cajas de seguridad, premios de REM y objetivos secundarios de las simulaciones.</p>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MAPA ============ -->
+<section id="mapa">
+  <h2>Mapa de la Cuna</h2>
+  <p class="lead">Desde el Refugio sales en tranvía a cada sector. Esquema de conexiones y qué desbloquea cada uno.</p>
+  <div class="scroll" style="padding:12px">
+    <svg class="mapsvg" viewBox="0 0 900 470" role="img" aria-label="Esquema de sectores de la Cuna">
+      <defs><marker id="ar" markerWidth="8" markerHeight="8" refX="7" refY="4" orient="auto"><path d="M0,0 L8,4 L0,8z" fill="currentColor"/></marker></defs>
+      <g style="color:var(--muted)" stroke="currentColor" stroke-width="2" fill="none" stroke-dasharray="6 5">
+        <path d="M450 235 L170 90"/><path d="M450 235 L450 90"/><path d="M450 235 L730 90"/>
+        <path d="M450 235 L170 380"/><path d="M450 235 L450 380"/><path d="M450 235 L730 380"/>
+      </g>
+      <g font-size="14" text-anchor="middle">
+        <g><rect x="365" y="205" width="170" height="60" rx="30" fill="var(--acc)"/><text x="450" y="232" fill="#04121c" font-weight="700">Refugio</text><text x="450" y="250" fill="#04121c" font-size="12">Shelter · hub</text></g>
+        <g><rect x="70" y="55" width="200" height="66" rx="10" fill="var(--card)" stroke="var(--line)"/><text x="170" y="78" fill="var(--ink)" font-weight="700">01 · Planta de energía solar</text><text x="170" y="96" fill="var(--muted)" font-size="12">Solar Power Plant</text><text x="170" y="112" fill="var(--acc)" font-size="12">Guardián de Sector → Sobrecarga</text></g>
+        <g><rect x="350" y="55" width="200" height="66" rx="10" fill="var(--card)" stroke="var(--line)"/><text x="450" y="78" fill="var(--ink)" font-weight="700">02 · Matriz de prod. en masa</text><text x="450" y="96" fill="var(--muted)" font-size="12">Mass Production Array</text><text x="450" y="112" fill="var(--acc)" font-size="12">Creador → Supresor de Filuna</text></g>
+        <g><rect x="630" y="55" width="200" height="66" rx="10" fill="var(--card)" stroke="var(--line)"/><text x="730" y="78" fill="var(--ink)" font-weight="700">03 · Terradomo</text><text x="730" y="96" fill="var(--muted)" font-size="12">Terra Dome</text><text x="730" y="112" fill="var(--acc)" font-size="12">Guardián del Jardín</text></g>
+        <g><rect x="70" y="350" width="200" height="66" rx="10" fill="var(--card)" stroke="var(--line)"/><text x="170" y="373" fill="var(--ink)" font-weight="700">04 · Minas de Lunum</text><text x="170" y="391" fill="var(--muted)" font-size="12">Lunum Mines · baja gravedad</text><text x="170" y="407" fill="var(--acc)" font-size="12">Excavador Lunar</text></g>
+        <g><rect x="350" y="350" width="200" height="66" rx="10" fill="var(--card)" stroke="var(--line)"/><text x="450" y="373" fill="var(--ink)" font-weight="700">05 · Pragmática Experimental</text><text x="450" y="391" fill="var(--muted)" font-size="12">Experimental Pragmatics</text><text x="450" y="407" fill="var(--acc)" font-size="12">Depuración (Cleanse)</text></g>
+        <g><rect x="630" y="350" width="200" height="66" rx="10" fill="var(--red)"/><text x="730" y="373" fill="#fff" font-weight="700">06 · Puerto Central</text><text x="730" y="391" fill="#fff" font-size="12">Central Port · Elevador orbital</text><text x="730" y="407" fill="#fff" font-size="12">Centinela · Ocho</text></g>
+      </g>
+      <g font-size="11" fill="var(--muted)"><text x="560" y="300">Tranvía</text><text x="250" y="300">Tranvía</text></g>
+    </svg>
+  </div>
+  <div class="grid g3" style="margin-top:14px">
+    <a class="card" href="https://www.gamerfocus.co/juegos/guia-pragmata-todos-los-coleccionables-de-la-planta-de-energia-solar/" target="_blank" rel="noopener"><b>GamerFocus · coleccionables</b><br><span class="note">Ubicaciones por subzona, en español latino.</span></a>
+    <a class="card" href="https://www.powerpyx.com/guide/pragmata/" target="_blank" rel="noopener"><b>PowerPyx · 184 coleccionables</b><br><span class="note">Videos y capturas de cada ubicación.</span></a>
+    <a class="card" href="https://gamefaqs.gamespot.com/ps5/292821-pragmata/faqs/82510" target="_blank" rel="noopener"><b>GameFAQs · walkthrough</b><br><span class="note">Recorrido detallado sala por sala.</span></a>
+  </div>
+</section>
+
+<!-- ============ POSTGAME ============ -->
+<section id="postgame">
+  <h2>Postgame</h2>
+  <div class="grid g2">
+    <div class="card">
+      <h3 style="margin-top:0">Señal Desconocida <span class="en">(Unknown Signal)</span></h3>
+      <p>Tras los créditos el Refugio detecta una señal de una <b>Cámara secreta</b> (<i>Hidden Chamber</i>) con 10 simuladores. Regresa a las salas de jefe de cada sector para pelear versiones <b>potenciadas</b>.</p>
+      <table class="tbl">
+        <tr><th>Simulador</th><th>Se abre con</th></tr>
+        <tr><td>Alfa</td><td>Disponible desde el inicio (<i>Armor Break</i> → plano de la Demoledora)</td></tr>
+        <tr><td>Beta</td><td>Guardián de Sector potenciado</td></tr>
+        <tr><td>Gamma</td><td>100 % Planta de energía solar</td></tr>
+        <tr><td>Delta</td><td>Creador potenciado</td></tr>
+        <tr><td>Épsilon</td><td>100 % Matriz de producción en masa</td></tr>
+        <tr><td>Zeta</td><td>Guardián del Jardín potenciado</td></tr>
+        <tr><td>Eta</td><td>100 % Terradomo</td></tr>
+        <tr><td>Theta</td><td>Excavador Lunar potenciado</td></tr>
+        <tr><td>Iota</td><td>100 % Minas de Lunum</td></tr>
+        <tr><td>Kappa</td><td>100 % Puerto Central</td></tr>
+      </table>
+      <p class="note">Recompensas: módulo <b>Caja negra</b> (<i>Black Box</i>), <b>Cañón de filuna</b> (<i>Lim Cannon</i>), trajes Obsidia (Hugh) y Black Neon (Diana). Equipa la Caja negra y vence otra vez a Ocho potenciada para cerrar el modo.</p>
+    </div>
+    <div class="card">
+      <h3 style="margin-top:0">Lunático <span class="en">(Lunatic)</span> y NG+</h3>
+      <ul>
+        <li>Se desbloquea al terminar la historia. Requiere <b>Nueva partida</b>, no NG+.</li>
+        <li>Enemigos más agresivos, con más vida y daño. Trofeo dorado <i>Lunar Supremacy</i>.</li>
+        <li>Prioriza vida, daño de hackeo y tu daño. Armas: <b>Demoledora</b> (pega fuerte sin abrir), <b>Láser fotónico</b> tras aturdir y <b>Perforacargas</b> cargado.</li>
+        <li>Contra Ocho: módulos <i>Cheap Shot, Recursive Learning, Analog Aggression, Skirmisher, Optimal Performance, Close Quarters</i>; Láser fotónico + Demoledora + modo Ofensivo; abre con Protocolo de Eliminación y repite cerca del 40 %.</li>
+        <li>El único trofeo perdible: <i>You're Not Getting Away That Easy</i>, derrotar a un <b>Barredor</b> (<i>Sweeper</i>). Aparece al azar en Matriz 03/04 y Minas 02/03; usa Red de Estasis o Sobrecarga antes de que huya.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- ============ FINALES ============ -->
+<section id="finales">
+  <h2>Finales</h2>
+  <p class="lead">Toca los textos borrosos para revelar el spoiler.</p>
+  <div class="grid g2">
+    <div class="card"><span class="tag a">Final normal</span><h3 style="margin-top:.4rem">“Our Promise”</h3><p class="spoiler">Tras vencer a Ocho y al Rencor de la Fibra Muerta, Hugh queda infectado y se queda en la Luna; envía a Diana de regreso a la Tierra. Una escena tras los créditos sugiere que Hugh sobrevivió.</p></div>
+    <div class="card"><span class="tag g">Final extendido</span><h3 style="margin-top:.4rem">“The Right Man for the Job”</h3><p class="spoiler">Completa los 10 simuladores de Señal Desconocida, equipa la Caja negra y derrota de nuevo a Ocho potenciada. El final es casi idéntico, pero cambian los créditos, aparece una tarjeta “Fin” y la escena postcréditos se alarga unos segundos.</p></div>
+  </div>
+</section>
+
+<!-- ============ FUENTES ============ -->
+<section id="fuentes">
+  <h2>Fuentes</h2>
+  <p class="lead">Datos revisados el 17 de octubre de 2026. Nombres en español tomados de guías latinoamericanas cuando existen; si en tu juego aparece otro nombre, guíate por el inglés.</p>
+  <ul>
+    <li><a href="https://gamefaqs.gamespot.com/ps5/292821-pragmata/faqs/82510" target="_blank" rel="noopener">GameFAQs — PRAGMATA Walkthrough (vreaper)</a></li>
+    <li><a href="https://www.powerpyx.com/pragmata-trophy-guide-roadmap/" target="_blank" rel="noopener">PowerPyx — Trophy Guide & Roadmap</a> y <a href="https://www.powerpyx.com/guide/pragmata/" target="_blank" rel="noopener">guía de coleccionables</a></li>
+    <li><a href="https://www.gamerfocus.co/juegos/guia-pragmata-todos-los-coleccionables-de-la-planta-de-energia-solar/" target="_blank" rel="noopener">GamerFocus — Planta de energía solar</a>, <a href="https://www.gamerfocus.co/juegos/guia-pragmata-todos-los-coleccionables-de-la-matriz-de-produccion-en-masa/" target="_blank" rel="noopener">Matriz de producción en masa</a>, <a href="https://www.gamerfocus.co/juegos/guia-pragmata-todos-los-coleccionables-del-terradomo/" target="_blank" rel="noopener">Terradomo</a></li>
+    <li><a href="https://evelongames.com/como-derrotar-al-primer-jefe-de-pragmata/" target="_blank" rel="noopener">EvelonGames — Cómo derrotar al Guardián de Sector</a></li>
+    <li><a href="https://www.infobae.com/malditos-nerds/2026/04/18/indice-de-guias-de-pragmata-trucos-builds-secretos-y-todo-lo-que-necesitas-saber/" target="_blank" rel="noopener">Infobae — Índice de guías de Pragmata</a></li>
+    <li><a href="https://www.chicasgamers.com/2026/04/guia-pragmata.html" target="_blank" rel="noopener">Chicas Gamers — Guía Pragmata</a></li>
+    <li><a href="https://vandal.elespanol.com/guias/guia-pragmata-trucos-consejos-y-secretos/armas" target="_blank" rel="noopener">Vandal — Armas</a>, <a href="https://vandal.elespanol.com/guias/guia-pragmata-trucos-consejos-y-secretos/nodos-de-hackeo" target="_blank" rel="noopener">nodos</a>, <a href="https://vandal.elespanol.com/guias/guia-pragmata-trucos-consejos-y-secretos/habilidades" target="_blank" rel="noopener">habilidades</a>, <a href="https://vandal.elespanol.com/guias/guia-pragmata-trucos-consejos-y-secretos/sectores" target="_blank" rel="noopener">sectores</a></li>
+    <li><a href="https://consolepulse.com/multiplatform/pragmata/guides/pragmata-all-bots-and-bosses-guide" target="_blank" rel="noopener">ConsolePulse — Bots and bosses guide</a></li>
+    <li><a href="https://en.wikipedia.org/wiki/Pragmata" target="_blank" rel="noopener">Wikipedia — Pragmata</a></li>
+  </ul>
+</section>
+</main>
+
+<footer>
+  <div class="wrap">Guía de fan sin afiliación con Capcom. PRAGMATA es marca de Capcom Co., Ltd. · <a href="https://hefestomar.github.io">hefestomar.github.io</a></div>
+</footer>
+
+<script>
+/* ---------- Tema ---------- */
+(function(){
+  var root=document.documentElement,key="prg-theme";
+  try{var s=localStorage.getItem(key);if(s)root.setAttribute("data-theme",s);}catch(e){}
+  document.getElementById("themeBtn").addEventListener("click",function(){
+    var dark=root.getAttribute("data-theme")==="dark"||(!root.getAttribute("data-theme")&&matchMedia("(prefers-color-scheme: dark)").matches);
+    var n=dark?"light":"dark";root.setAttribute("data-theme",n);
+    try{localStorage.setItem(key,n);}catch(e){}
+  });
+  document.addEventListener("click",function(e){var s=e.target.closest(".spoiler");if(s)s.classList.toggle("show");});
+})();
+function el(h){var t=document.createElement("template");t.innerHTML=h.trim();return t.content.firstChild;}
+function lsGet(k,d){try{var v=localStorage.getItem(k);return v?JSON.parse(v):d;}catch(e){return d;}}
+function lsSet(k,v){try{localStorage.setItem(k,JSON.stringify(v));}catch(e){}}
+function makeFilter(boxId,opts,onPick){var f=document.getElementById(boxId),cur=opts[0];
+  opts.forEach(function(z){var b=el('<button type="button"'+(z===cur?' class="on"':'')+'>'+z+'</button>');b.onclick=function(){cur=z;[].forEach.call(f.children,function(c){c.classList.toggle("on",c.textContent===z);});onPick(z);};f.appendChild(b);});
+  onPick(cur);}
+
+/* ---------- Ruta ---------- */
+var steps=[
+ {sec:"Prólogo",t:"Prólogo — Caída a la Luna",en:"Prologue",p:3,fw:"—",goal:"Llegar al tranvía",b:[
+  "Escenas iniciales: sigue al equipo y encuentra a <b>James</b>. Aprendes salto y <b>propulsores</b> (mantén salto para flotar).",
+  "Primer <b>Caminante</b> (<i>Walker</i>): no le hace daño el disparo hasta que la niña lo hackea. Tutorial de hackeo: llega al icono verde EXE pasando por nodos azules.",
+  "Puerta con hackeo cronometrado; en la estación roja recoges un <b>cartucho de reparación</b> (no se regeneran).",
+  "Sigue hasta el tranvía. Al inicio eliges dificultad: Estándar o Casual (puedes bajar a Casual tras morir, pero no regresar)."]},
+ {sec:"01 · Planta de energía solar",t:"Refugio y Entrada del generador",en:"Shelter · Generator Entrance",p:6,fw:"1–3",goal:"Restaurar la energía del sector",b:[
+  "Llegas al <b>Refugio</b> (trofeo <i>Rendezvous</i>). Casi todo está bloqueado en nivel 0. Toma el tranvía.",
+  "Hackea la puerta <b>Sec 6</b> y las dos terminales rojas para abrir la compuerta.",
+  "Ojo con los <b>Vigías</b> (<i>Watchers</i>): dispara a su mira para aturdirlos."]},
+ {sec:"01 · Planta de energía solar",t:"Compuerta del sector cerrado / Centro de difusión energética",en:"Power Distribution Center",p:9,fw:"3–4",goal:"Abrir la compuerta del vestíbulo de control",b:[
+  "Primera <b>escotilla de escape</b> (viaje rápido y curación).",
+  "Puzzles de láser con interruptores y elevadores. Obtienes la <b>Pistola de choque</b> (<i>Shockwave Gun</i>) y la <b>Red de Estasis</b> (<i>Stasis Net</i>).",
+  "Cajas de seguridad: tras el elevador cruza la barrera con propulsores y déjate caer por la derecha. Volverás con el Supresor de Filuna por la 3.ª y un lúnum puro.",
+  "<b>Triturador</b> (<i>Crusher</i>): punto débil en la cabeza; la Pistola de choque es ideal."]},
+ {sec:"01 · Planta de energía solar",t:"Explanada y Guardián de Sector",en:"The Concourse · SectorGuard",p:14,fw:"4–6",goal:"Derrotar al Guardián de Sector",b:[
+  "Enfermería: <b>Portacartuchos</b> tras la puerta izquierda del acceso. Cofre azul: módulo <b>Traje reforzado</b> (<i>Hardened Suit</i>).",
+  "REM automática <b>Globo terráqueo</b>; tras la pared holográfica (parpadea en azul) en las escaleras eléctricas, REM <b>Set de crayones</b>. Nodo <b>Decodificador</b> en el pasillo antes del ascensor.",
+  "Jefe <b>Guardián de Sector</b>: hackea, Red de Estasis, Pistola de choque al tanque rojo de la espalda. Desbloqueas la <b>Sobrecarga</b> de Diana.",
+  "Recompensa: <b>Licencia del Refugio 1</b> (trofeo <i>Power Trip</i>)."]},
+ {sec:"02 · Matriz de producción en masa",t:"Entrada del sitio de pruebas y Distrito comercial",en:"Test Site Entrance · Shopping District",p:20,fw:"6–7",goal:"Hackear las balizas de la ciudad",b:[
+  "En el Refugio aparece <b>Cabin</b> con su club de sellos (monedas de Cabin). Compra <b>Multihackeo</b>.",
+  "Nuevo enemigo <b>Araña</b> (<i>Spider</i>): hackea rápido y usa Red de Estasis.",
+  "Distrito comercial: plano del <b>Bláster antidisturbios</b> (<i>Riot Blaster</i>) frente al restaurante con neón. Módulos <b>Brecha extendida</b> y <b>Combate cercano</b>. Primera <b>Zona Roja</b> (llave del panel de Cabin) con lúnum puro.",
+  "Mini Cabin en la azotea junto a los anuncios REDMAX."]},
+ {sec:"02 · Matriz de producción en masa",t:"Planta de reciclaje de filuna",en:"Lim Recycling Facility",p:25,fw:"7–8",goal:"Conseguir el Supresor de Filuna",b:[
+  "Plano del <b>Generador de señuelos</b> (<i>Decoy Generator</i>) en el pasillo de entrada.",
+  "Obtienes el <b>Supresor de Filuna</b> (<i>Lim Eraser</i>): borra los cúmulos de fibraluna / errores de impresión.",
+  "Trofeo <i>Round 'Em Up</i>: junta 3 enemigos sobre las placas amarillas con el señuelo y activa el reciclador.",
+  "Vuelta opcional: Planta solar (caja de seguridad + lúnum puro + extensor de memoria) y el Distrito comercial."]},
+ {sec:"02 · Matriz de producción en masa",t:"Callejón lateral",en:"Side Alley",p:29,fw:"8",goal:"Llegar a la baliza del callejón",b:[
+  "Pelea dura contra un <b>Ejecutor</b> (<i>Executor</i>): aturde con Red de Estasis o Bláster, hackea y dispara a los tubos de la espalda; cuando se recupere, dispara a las 4 luces rojas de la cabeza.",
+  "Plano del <b>Perforacargas</b> (<i>Charge Piercer</i>) junto a una puerta del camino principal.",
+  "Módulos <b>Repetidor de señal</b> y <b>Francotirador</b> (<i>Long Range Targeting</i>). REM en el elevador. Mini Cabin en el camión empotrado."]},
+ {sec:"02 · Matriz de producción en masa",t:"Distrito empresarial y el Creador",en:"Business District · Creator",p:35,fw:"8–9",goal:"Derrotar al Creador",b:[
+  "Segunda Zona Roja: lúnum puro y módulo <b>Refinería portátil</b>. REM en la escalera del pilar central.",
+  "Jefe <b>Creador</b> en la Torre de comunicaciones: Red de Estasis a la cabeza, señuelo para distraer, hackea y dispara a la boca. Destruye las barreras de sus 4 extremidades y usa los elevadores de edificios impresos para alcanzar su espalda.",
+  "Recompensa: <b>Licencia 2</b> (tope de firmware 13) y se desbloquea el <b>Escáner de objetos</b>. Trofeo <i>The Purr-fect Guide</i> al llegar a la torre."]},
+ {sec:"03 · Terradomo",t:"Entrada del Terradomo y Fábrica de plantas",en:"Terra Dome Entrance · Plant Factory",p:40,fw:"9–10",goal:"Cruzar la fábrica de plantas",b:[
+  "Refugio nivel 2: simulaciones de Cabin y nuevo panel de sellos.",
+  "Nuevo enemigo <b>Lancero</b> (<i>Lancer</i>): punto débil en el disco de la cabeza. REM <b>Flores</b> en las ramas sobre el elevador.",
+  "En la fábrica eliges sala A o B tres veces (no hay vuelta atrás). La sala A del set 3 es una Zona Roja con lúnum puro.",
+  "Plano de la <b>Carabina de pulso</b> (<i>Pulse Carbine</i>), arma principal con munición que se regenera. Módulos <b>Golpe bajo</b> (<i>Cheap Shot</i>) y <b>Disparo preciso</b>."]},
+ {sec:"03 · Terradomo",t:"Centro de ecorrecreación",en:"Eco Modeling Lab",p:46,fw:"10–11",goal:"Recolectar los Gen Chips",b:[
+  "Plano de las <b>Bombas adhesivas</b> (<i>Sticky Bombs</i>): quitan una fila o columna de la cuadrícula de hackeo.",
+  "Módulos <b>Hackeo didáctico</b> (<i>Recursive Learning</i>), <b>Contradefensa</b> y, en la Zona Roja, <b>Daño colateral</b>. REM <b>Globos</b>.",
+  "Subjefe: <b>Guardián de Sector</b> de nuevo + 2 Lanceros. Usa Multihackeo y Amotinador para que se dañen entre sí.",
+  "Recompensa: firmware de Hugh con una ranura extra de ataque y una táctica."]},
+ {sec:"03 · Terradomo",t:"Laboratorio de geología",en:"Soil Research",p:51,fw:"11–12",goal:"Abrir la puerta de los tres interruptores",b:[
+  "Nuevo enemigo <b>Acechador</b> (<i>Creeper</i>): invisible; lo revelan el señuelo o la Red de Estasis. Puntos débiles en los extremos de la esfera trasera.",
+  "Plano del <b>Láser fotónico</b> (<i>Photon Laser</i>) en una sala oscura tras la puerta de cuatro bloqueos.",
+  "REM <b>Columpio</b> en un pasillo lateral; lúnum puro en una sala oscura; datos de entrenamiento desde la playa."]},
+ {sec:"03 · Terradomo",t:"Terrario y Guardián del Jardín",en:"Terrarium · Garden Keeper",p:55,fw:"12–13",goal:"Derrotar al Guardián del Jardín",b:[
+  "Zona Roja antes del jefe: lúnum puro + extensor de memoria.",
+  "Lleva Red de Estasis, Bláster antidisturbios, Pistola de choque, Perforacargas y nodos Decodificador / Disruptor.",
+  "Jefe <b>Guardián del Jardín</b> (<i>Garden Keeper</i>): láseres de cola, estocadas, coletazos (salta), minas hackeables. Puntos débiles: cola, cabeza y vientre. Cuando sube al techo, aguanta hasta que baje.",
+  "Recompensa: <b>Licencia 3</b> (tope 17). Trofeo <i>Another Pragmata</i> por la niña atrapada."]},
+ {sec:"04 · Minas de Lunum",t:"Entrada de la mina y Patio de grúas",en:"Mine Entrance · Crane Operation Yard",p:61,fw:"13–14",goal:"Avanzar por las minas en baja gravedad",b:[
+  "Antes: regresa al Terradomo por la Zona Roja oscura (Acechadores + Bombardero) → lúnum puro y extensor.",
+  "La gravedad lunar alarga los saltos. Plano de los <b>Misiles teledirigidos</b> (<i>Homing Missiles</i>) en la 2.ª zona de gravedad cero. Módulo <b>Equilibrium</b>.",
+  "Patio de grúas: plano de la <b>Barrera de impacto</b> (<i>Impact Barrier</i>), módulos <i>Analogue Aggression</i> y <i>Digital Dominance</i>.",
+  "El <b>Excavador Lunar</b> asoma en exteriores: no lo enfrentes todavía (o hazlo por el trofeo <i>Courage in Desperation</i>: déjate caer para atraerlo y pelea hasta que huya)."]},
+ {sec:"04 · Minas de Lunum",t:"Almacén y Sitio principal de excavación",en:"Warehouse · Main Excavation Site",p:68,fw:"14–16",goal:"Llegar a la Torre Nexus",b:[
+  "Almacén: Zona Roja, módulo <i>Nice Nodes</i>, lúnum puro. <b>Defensor</b> (<i>Defender</i>): pasa por un nodo Amotinador y róbale el escudo (trofeo <i>Can I Borrow That?</i>).",
+  "<b>Asaltante aéreo</b> (<i>Air Raider</i>): desorienta con el Bláster y hackea.",
+  "Excavación: sustancia negra que drena vida; un Caminante infectado tiene cuadrícula glitcheada (usa el Generador de código). Módulos <i>Eagle Eye</i> y <i>Synaptic Response</i>; llave roja."]},
+ {sec:"04 · Minas de Lunum",t:"Torre Nexus y Excavador Lunar",en:"Nexus Tower · LunaDigger",p:76,fw:"16–17",goal:"Derrotar al Excavador Lunar",b:[
+  "Última Mini Cabin de la zona y una pared oculta con tableta y caja de seguridad. Trofeo <i>Mission Unveiled</i>.",
+  "Jefe <b>Excavador Lunar</b> (<i>LunaDigger</i>): súbete a las torres para atraerlo, levanta la <b>Barrera de impacto</b> cuando se acerque y hackea para abrirle la boca. Fase 2: hackea a los robots pequeños y redirígelos contra él.",
+  "Recompensa: <b>Licencia 4</b> (tope 20)."]},
+ {sec:"05 · Pragmática Experimental",t:"Centro de Pragmática Experimental",en:"Experimental Pragmatics",p:79,fw:"17",goal:"Reparar a Diana",b:[
+  "Tranvía especial. Diana está dañada: su hackeo se llena de nodos glitch y aparece la <b>fibra muerta</b> (<i>Dead Filament</i>).",
+  "Pasillos con poca munición: elimina enemigos con cuidado. Recoge el reactor y vence a 3 Caminantes y un Lancero.",
+  "Regresa a Diana a la camilla y esquiva al robot cubierto de fibra muerta hasta que pase el tiempo.",
+  "Diana obtiene la <b>Depuración</b> (<i>Cleanse</i>) y el <b>Protocolo de Eliminación</b>. Trofeo <i>Awakening</i>. Sin coleccionables."]},
+ {sec:"06 · Puerto Central",t:"Entrada del puerto y Sector de investigación",en:"Port Entrance · Research Sector",p:85,fw:"17–18",goal:"Cruzar el puerto en el carguero",b:[
+  "Antes: vuelta con Depuración a Matriz (oficinas), Terradomo (simulador meteorológico), Minas (plataforma y logística) y la Zona Roja de la Torre Nexus (módulo <i>Economize</i>).",
+  "Refugio nivel 4: casi todo se puede maximizar.",
+  "Enemigos <b>corruptos</b>: Depúralos antes de hackear. La <b>Anomalía</b> pierde los brazos al depurarla. Módulo <i>Untapped Potential</i>."]},
+ {sec:"06 · Puerto Central",t:"Laboratorio de regolito, de fibraluna y el Centinela",en:"Regolith Lab · Lunafilament Lab · Sentinel",p:92,fw:"18–19",goal:"Derrotar al Centinela",b:[
+  "Regolito: módulo <i>Heat Transfer</i>; Zona Roja con Asaltante aéreo (Barrera + Amotinador + Multihackeo) → 2 cofres de lúnum y módulo <i>Cursed</i>.",
+  "Laboratorio de fibraluna: última Zona Roja, cuatro interruptores para la compuerta y los últimos datos de entrenamiento. Trofeo <i>Entrusted Memory</i>.",
+  "Jefe <b>Centinela</b> (<i>Sentinel</i>): combos de cuchilla, misiles y picadas. Barrera o señuelo, aturde con el Bláster, Depura y hackea; punto débil en el pecho. Cerca del final absorbe fibra muerta: Depúralo otra vez. Trofeo <i>Sentinel Breach</i>."]},
+ {sec:"06 · Puerto Central",t:"Elevador orbital — Ocho y el final",en:"Orbital Elevator · Eight / Idea",p:100,fw:"19–20",goal:"Derrotar a Ocho",b:[
+  "Regresa al Refugio a preparar. En el elevador: módulo <i>Adrenaline Flood</i> y la última Mini Cabin.",
+  "Equipo sugerido: Pistola de choque o Láser fotónico, Red de Estasis o Bláster, <b>Colmena de drones</b>, nodos Parálisis + Radiador + Disruptor y modo Combustión.",
+  "Jefa final <b>Ocho / Idea</b> (<i>Eight</i>): Depúrala dos veces para abrirla; los señuelos y barreras no sirven. Hackea esquivando las líneas rojas cuando te atrape. Al 50 % contrahackea; cuando vuele, esquiva hasta que aterrice.",
+  "Cierre: <b>Rencor de la Fibra Muerta</b> (<i>Grudge of Dead Filament</i>) — Diana hackea y Hugh dispara el cañón gigante, unas 5 veces. Trofeo dorado <i>Our Promise</i>."]}
+];
+var post=[
+ "Simulador Alfa (Armor Break) y plano de la Demoledora",
+ "Guardián de Sector potenciado",
+ "Creador potenciado",
+ "Guardián del Jardín potenciado",
+ "Excavador Lunar potenciado",
+ "100 % en los 5 sectores",
+ "10 simuladores completados → Caja negra",
+ "Ocho potenciada con Caja negra equipada",
+ "Lunático completado",
+ "15 Mini Cabin · 30 simulaciones · todas las REM"
+];
+var KEY="prg-steps",PKEY="prg-post";
+function curStep(){var d=lsGet(KEY,[]);for(var i=0;i<steps.length;i++){if(d.indexOf(i)<0)return i;}return steps.length;}
+(function(){
+  var box=document.getElementById("steps"),done=lsGet(KEY,[]),last="";
+  steps.forEach(function(s,i){
+    if(s.sec!==last){box.appendChild(el('<div class="sechead">'+s.sec+'</div>'));last=s.sec;}
+    var d=el('<details class="step'+(done.indexOf(i)>-1?' done':'')+'" id="st'+i+'"><summary><span class="stepn">'+(i+1)+'</span><span class="sumt"><b>'+s.t+'</b><small>('+s.en+') · firmware sugerido '+s.fw+'</small></span><span class="pct">'+s.p+' %</span></summary><div class="stepbody"><ol>'+s.b.map(function(x){return"<li>"+x+"</li>";}).join("")+'</ol><label class="chk"><input type="checkbox" data-i="'+i+'"'+(done.indexOf(i)>-1?" checked":"")+'> <span>Tramo completado</span></label></div></details>');
+    box.appendChild(d);
+  });
+  var pb=document.getElementById("postList"),pd=lsGet(PKEY,[]);
+  post.forEach(function(t,i){pb.appendChild(el('<label class="chk"><input type="checkbox" data-p="'+i+'"'+(pd.indexOf(i)>-1?" checked":"")+'> <span>'+t+'</span></label>'));});
+  function upd(){
+    var dn=lsGet(KEY,[]),max=0;dn.forEach(function(i){if(steps[i]&&steps[i].p>max)max=steps[i].p;});
+    document.getElementById("pctTotal").textContent=max;document.getElementById("barTotal").style.width=max+"%";
+    var c=curStep(),nb=document.getElementById("nextBox");
+    if(c<steps.length){var s=steps[c];nb.innerHTML='<p style="margin:.6rem 0 0"><b>Siguiente:</b> '+s.t+' <span class="en">('+s.en+')</span><br><span class="note">Objetivo: '+s.goal+' · firmware sugerido '+s.fw+'</span></p><p style="margin:.4rem 0 0"><a href="#st'+c+'" data-open="'+c+'">Ver tramo '+(c+1)+' →</a></p>';}
+    else nb.innerHTML='<p style="margin:.6rem 0 0"><b>¡Historia completada!</b> Sigue con Señal Desconocida y Lunático.</p>';
+    steps.forEach(function(s,i){var e=document.getElementById("st"+i);if(e)e.classList.toggle("done",dn.indexOf(i)>-1);});
+    var pdn=lsGet(PKEY,[]),pp=Math.round(pdn.length/post.length*100);
+    document.getElementById("pctPost").textContent=pp;document.getElementById("barPost").style.width=pp+"%";
+    document.dispatchEvent(new Event("prg:progress"));
+  }
+  document.addEventListener("change",function(e){
+    var t=e.target;if(!t||!t.matches)return;
+    if(t.matches("input[data-i]")){var i=+t.dataset.i,dn=lsGet(KEY,[]).filter(function(x){return x!==i;});if(t.checked)dn.push(i);lsSet(KEY,dn);upd();}
+    if(t.matches("input[data-p]")){var j=+t.dataset.p,pd=lsGet(PKEY,[]).filter(function(x){return x!==j;});if(t.checked)pd.push(j);lsSet(PKEY,pd);upd();}
+  });
+  document.addEventListener("click",function(e){var a=e.target.closest("a[data-open]");if(a){var d=document.getElementById("st"+a.dataset.open);if(d)d.open=true;}});
+  upd();
+})();
+
+/* ---------- Jefes ---------- */
+var bosses=[
+ ["Guardián de Sector","SectorGuard","01 · Planta solar · cima","4–6","Embiste dos veces y se sobrecalienta (ventana para hackear); lluvia de misiles marcada con círculos rojos. Al 70 % entra en furia.","Tanque rojo de la espalda","Licencia 1 · Sobrecarga"],
+ ["Ejecutor","Executor","02 · Matriz · Callejón lateral","8","Muy resistente, cuadrícula de hackeo grande; antenas de escudo de emergencia.","Tubos de la espalda; 4 luces rojas de la cabeza reactivan el hackeo","Avance"],
+ ["Creador","Analysis: Creator","02 · Matriz · Torre de comunicaciones","8–9","Zarpazos, picos impresos desde círculos azules, barreras rojas en sus 4 extremidades, láseres al reptar y un ataque masivo con luces rojas cerca del final.","Boca","Licencia 2 · Escáner de objetos"],
+ ["Guardián de Sector + 2 Lanceros","SectorGuard (sub-boss)","03 · Terradomo · Ecorrecreación","10–11","Mismo patrón del primer jefe, con apoyo de Lanceros.","Tanque trasero; usa Multihackeo y Amotinador","Ranuras extra de ataque y táctica"],
+ ["Guardián del Jardín","Garden Keeper","03 · Terradomo · Terrario","12–13","Láseres de cola, estocadas, coletazos, minas hackeables; sube al techo y lanza minas y láseres en abanico.","Cola, cabeza y vientre","Licencia 3"],
+ ["Excavador Lunar","LunaDigger","04 · Minas de Lunum · Torre Nexus","16–17","Láser bucal, misiles, intenta tragarte; fase 2 invoca robots pequeños; fase final con muchos más misiles.","Boca (ábrela con hackeo bajo la Barrera de impacto)","Licencia 4"],
+ ["Centinela","Sentinel","06 · Puerto Central · Lab. de fibraluna","18–19","Combos de cuchilla, misiles de hombro, picadas y explosiones de niebla térmica. Absorbe fibra muerta al final.","Pecho, tras Depurar","Avance al elevador"],
+ ["Ocho / Idea","Eight","06 · Puerto Central · cima del Elevador orbital","19–20","Barridos de tentáculos, estocadas, orbes de fibra muerta; te atrapa (hackea esquivando líneas rojas); contrahackea al 50 %; vuela y llueve ataques.","Expuesta tras 2 Depuraciones + hackeo","Final"],
+ ["Rencor de la Fibra Muerta","Grudge of Dead Filament","06 · Elevador orbital","—","Secuencia sobre rieles: Diana hackea y Hugh dispara el cañón gigante unas 5 veces.","Objetivos marcados","Créditos"],
+];
+(function(){
+  var h='<tr><th>Jefe</th><th>Dónde</th><th>Firmware</th><th>Ataques</th><th>Punto débil</th><th>Recompensa</th></tr>';
+  bosses.forEach(function(b){h+='<tr><td><b>'+b[0]+'</b><br><span class="en">('+b[1]+')</span></td><td>'+b[2]+'</td><td class="num">'+b[3]+'</td><td>'+b[4]+'</td><td>'+b[5]+'</td><td>'+b[6]+'</td></tr>';});
+  document.getElementById("bossTbl").innerHTML=h;
+})();
+
+/* ---------- Enemigos ---------- */
+var enemies=[
+ ["Caminante","Walker","Todos","●","Cuchilla láser cuerpo a cuerpo","Cabeza tras hackear; elimínalo primero en grupos mixtos"],
+ ["Vigía","Watcher","Todos","●●","Dron con railgun lento","Muévete de lado para romper la fijación; dispara a su mira para aturdirlo"],
+ ["Vigía lanzamisiles","Missile Watcher","Matriz y después","●●","Misiles lentos teledirigidos","Derriba los misiles o hackéalos para redirigirlos"],
+ ["Vigía de precisión","Precision Watcher","Matriz","●●","Ráfagas rápidas y certeras","Cúbrete y hackea entre ráfagas"],
+ ["Triturador","Crusher","Planta solar y después","●●","Pisotones y ondas de choque de área","Cabeza / parte superior; Pistola de choque"],
+ ["Araña","Spider","Matriz y después","●●","Se lanza girando como disco con cuchillas","Aberturas centrales de la cabeza; Red de Estasis"],
+ ["Ejecutor","Executor","Matriz, Minas, Puerto","●●●","Muy resistente; antenas de escudo","Tubos traseros; dispara a las 4 luces rojas de la cabeza"],
+ ["Lancero","Lancer","Terradomo y después","●●","Embestida y láseres desde los brazos","Disco giratorio de la cabeza"],
+ ["Inhibidor","Impeder","Terradomo y después","●●","Cohetes EMP y campos eléctricos que te inmovilizan","Prioridad en salas mixtas"],
+ ["Bombardero","Bomber","Terradomo y después","●●","Cargas explosivas marcadas y ondas eléctricas","Disparo desde abajo tras bajar defensas"],
+ ["Acechador","Creeper","Terradomo y después","●●●","Invisible, te sujeta; su camuflaje bloquea el hackeo","Revélalo con señuelo o Red de Estasis; extremos de la esfera trasera"],
+ ["Reensamblador","Reassembler","Varios","●","Repara robots; no ataca","Elimínalo primero: lo que repara no se puede hackear"],
+ ["Artillero","Gunner","Varios","●●","Torreta fija con artillería y láser rápido","Globo frágil tras hackear"],
+ ["Defensor","Defender","Minas, Puerto","●●●","Escudo; te persigue cuando cae la barrera","4 nodos centrales; con Amotinador robas su escudo"],
+ ["Asaltante aéreo","Air Raider","Minas, Puerto","●●●","Dron militar rápido: bombas, láseres y minas","Desorienta con el Bláster antidisturbios y hackea"],
+ ["Barredor","Sweeper","Matriz 03/04, Minas 02/03","●","Huye y suelta filuna; no ataca","Hackéalo antes de que escape (trofeo perdible)"],
+ ["Variantes Mk. II","Mark II","Terradomo y después","●●●","Más rápidas, esquivan, más blindaje y radio","Mismos puntos débiles, más daño"],
+ ["Caminante / Ejecutor corrupto","Anomalous / Infected","Pragmática Exp., Puerto","●●●","Púas y explosiones; hackeo bloqueado","Depúralo primero; crecimientos naranjas tras depurar"],
+ ["Anomalía","Anomaly","Puerto Central","●●●","Brazos-tentáculo y embestida mordiendo","La Depuración le quita los brazos; varios núcleos"],
+ ["Centinela","Sentinel","Puerto Central","●●●","Cohetes, cuchillas, niebla térmica","Depura y hackea; punto débil en el pecho"],
+];
+makeFilter("enemyFilter",["Todos","Planta solar","Matriz","Terradomo","Minas","Puerto"],function(z){
+  var h='<tr><th>Enemigo</th><th>Aparece</th><th>Peligro</th><th>Ataque</th><th>Cómo vencerlo</th></tr>';
+  enemies.filter(function(e){return z==="Todos"||e[2]==="Todos"||e[2].indexOf(z)>-1||(z!=="Planta solar"&&/y después/.test(e[2])&&order(z)>=order(e[2].split(" y ")[0]))||(e[2]==="Varios");}).forEach(function(e){h+='<tr><td><b>'+e[0]+'</b><br><span class="en">('+e[1]+')</span></td><td>'+e[2]+'</td><td>'+e[3]+'</td><td>'+e[4]+'</td><td>'+e[5]+'</td></tr>';});
+  document.getElementById("enemyTbl").innerHTML=h;
+});
+function order(z){return ["Planta solar","Matriz","Terradomo","Minas","Puerto"].indexOf(z);}
+
+/* ---------- Armas ---------- */
+var weap=[
+ ["Pistola de agarre","Grip Gun","Principal","Arma inicial; se mejora en el Actualizador de firmware","Inicio"],
+ ["Carabina de pulso","Pulse Carbine","Principal","Automática, munición que se regenera; llena rápido el sobrecalentamiento","03 · Terradomo, Fábrica de plantas"],
+ ["Pistola de choque","Shockwave Gun","Ataque","Ondas de corto alcance; ideal contra Trituradores y el primer jefe","01 · Centro de difusión energética"],
+ ["Perforacargas","Charge Piercer","Ataque","Perfora blindaje; cargada no pierde daño por distancia (trofeo de 6000)","02 · Callejón lateral"],
+ ["Láser fotónico","Photon Laser","Ataque","Rayo que crece mientras disparas; te frena","03 · Laboratorio de geología"],
+ ["Misiles teledirigidos","Homing Missiles","Ataque","Fija a varios enemigos mientras cargas","04 · Entrada de la mina"],
+ ["Demoledora","Jackhammer","Ataque","Daño enorme a quemarropa incluso sin abrir","Postgame · Simulador Alfa"],
+ ["Cañón de filuna","Lim Cannon","Ataque","Consume filuna; más filuna al eliminar","Postgame · 10 simuladores"],
+ ["Red de Estasis","Stasis Net","Táctica","Inmoviliza; revela Acechadores","01 · Centro de difusión energética"],
+ ["Bláster antidisturbios","Riot Blaster","Táctica","Derriba incluso sin hackear; no se combina con la Red","02 · Distrito comercial"],
+ ["Bombas adhesivas","Sticky Bombs","Táctica","Daño y borran una fila/columna de la cuadrícula","03 · Centro de ecorrecreación"],
+ ["Generador de código","Code Generator","Táctica","Más daño de hackeo y nodos azules extra","Panel de Cabin Especialista"],
+ ["Mina de hackeo","Hacking Mine","Táctica","Minas con nodos que se encadenan","Panel de Cabin Director"],
+ ["Generador de señuelos","Decoy Generator","Defensiva","Holograma que atrae enemigos","02 · Planta de reciclaje"],
+ ["Colmena de drones","Drone Hive","Defensiva","Drones que atacan solos; la mejor defensa contra Ocho","Panel de Cabin Socio"],
+ ["Barrera de impacto","Impact Barrier","Defensiva","Muro que detiene enemigos y proyectiles","04 · Patio de grúas"],
+];
+makeFilter("weapFilter",["Todas","Principal","Ataque","Táctica","Defensiva"],function(z){
+  var c={Principal:"",Ataque:" r",Táctica:" a",Defensiva:" g"};
+  var h='<tr><th>Arma</th><th>Tipo</th><th>Efecto</th><th>Dónde / cómo</th></tr>';
+  weap.filter(function(w){return z==="Todas"||w[2]===z;}).forEach(function(w){h+='<tr><td><b>'+w[0]+'</b><br><span class="en">('+w[1]+')</span></td><td><span class="tag'+c[w[2]]+'">'+w[2]+'</span></td><td>'+w[3]+'</td><td>'+w[4]+'</td></tr>';});
+  document.getElementById("weapTbl").innerHTML=h;
+});
+
+/* ---------- Nodos, habilidades, mods ---------- */
+(function(){
+  var nodes=[["Decodificador","Decode","Más daño recibido por un tiempo","Planta solar, antes del jefe · 200"],["Multihackeo","Multihack","Abre varios enemigos a la vez (menos daño)","Impresora · 300 · Refugio 1"],["Parálisis","Freeze","Detiene al enemigo","Panel Aprendiz"],["Amotinador","Confuse","Fuego amigo; roba el escudo del Defensor","Impresora · 400 · Refugio 2"],["Disruptor","Expose","Daño crítico y más aturdimiento","Panel Socio"],["Radiador","Heat","Sobrecalienta más rápido","Impresora · 400 · Refugio 3"],["Drenador","Drain","Recupera vida","Panel Especialista"],["Encadenador","Chain","Daño extra por nodos atravesados","Panel Director"]];
+  var h='<tr><th>Nodo</th><th>Efecto</th><th>Cómo</th></tr>';nodes.forEach(function(n){h+='<tr><td><b>'+n[0]+'</b> <span class="en">('+n[1]+')</span></td><td>'+n[2]+'</td><td>'+n[3]+'</td></tr>';});
+  document.getElementById("nodeTbl").innerHTML=h;
+  var ab=[["Escanear","Scan","Inicio"],["Sobrecarga","Overdrive Protocol","Jefe 1"],["Disparo crítico","Critical Shot","1 lúnum · Refugio 1"],["Cámara lenta","Fast Moves","1 lúnum · Refugio 1"],["Supresor de Filuna","Lim Eraser","Historia · Matriz"],["Autohackeo","Auto Hacking","1 lúnum · Refugio 2"],["Analizador","Bot Scan","150 · Refugio 2"],["Escáner de objetos","Object Scan","150 · Refugio 2"],["Propulsores CE","EC Thrusters","1 lúnum · Refugio 2"],["Depuración","Cleanse","Historia · Sector 5"]];
+  var a='<tr><th>Habilidad</th><th>Cómo</th></tr>';ab.forEach(function(x){a+='<tr><td><b>'+x[0]+'</b> <span class="en">('+x[1]+')</span></td><td>'+x[2]+'</td></tr>';});
+  document.getElementById("abilTbl").innerHTML=a;
+  var mods=[["01 · Planta solar","Traje reforzado (Hardened Suit) — más vida"],["02 · Matriz","Brecha extendida (Extended Breach) · Combate cercano (Close Quarters) · Repetidor de señal (Relay Amplifier) · Francotirador (Long Range Targeting) · Refinería portátil (Pocket Refinery)"],["03 · Terradomo","Golpe bajo (Cheap Shot) · Disparo preciso (Precision Shot) · Hackeo didáctico (Recursive Learning) · Contradefensa (Aggressive Defense) · Daño colateral (Collateral Damage)"],["04 · Minas de Lunum","Equilibrium · Analogue Aggression · Digital Dominance · Nice Nodes · Eagle Eye · Synaptic Response · Economize (Zona Roja de Nexus, con Depuración)"],["06 · Puerto Central","Untapped Potential · Heat Transfer · Cursed · Adrenaline Flood"],["Postgame","Caja negra (Black Box) — sin efecto en combate; final extendido"]];
+  var m='<tr><th>Sector</th><th>Módulos</th></tr>';mods.forEach(function(x){m+='<tr><td><b>'+x[0]+'</b></td><td>'+x[1]+'</td></tr>';});
+  document.getElementById("modTbl").innerHTML=m;
+  var col=[["01 · Planta de energía solar","Solar Power Plant",3,3,3,1,2,1,1,1,0,15],["02 · Matriz de producción en masa","Mass Production Array",3,5,17,4,4,5,0,1,0,39],["03 · Terradomo","Terra Dome",3,6,20,6,4,5,1,0,2,47],["04 · Minas de Lunum","Lunum Mines",3,7,17,4,3,7,2,0,2,45],["05 · Pragmática Experimental","Experimental Pragmatics",0,0,0,0,0,0,0,0,0,0],["06 · Puerto Central","Central Port",3,6,13,6,3,4,1,0,2,38]];
+  var tot=[0,0,0,0,0,0,0,0,0,0];
+  var c='<tr><th>Sector</th><th>Mini Cabin</th><th>Escotillas</th><th>Cajas de seg.</th><th>Lúnum puro</th><th>REM</th><th>Módulos</th><th>Extensores</th><th>Portacart.</th><th>Datos entr.</th><th>Total</th></tr>';
+  col.forEach(function(r){c+='<tr><td><b>'+r[0]+'</b><br><span class="en">('+r[1]+')</span></td>';for(var i=2;i<12;i++){c+='<td class="num">'+r[i]+'</td>';tot[i-2]+=r[i];}c+='</tr>';});
+  c+='<tr><td><b>Total</b></td>'+tot.map(function(x){return'<td class="num">'+x+'</td>';}).join("")+'</tr>';
+  document.getElementById("colTbl").innerHTML=c;
+  var rem=[["01 · Planta solar","Globo terráqueo (automática) · Set de crayones (tras la pared holográfica de la Explanada; da el 1.er dibujo)"],["02 · Matriz","Balón de básquet · Tobogán · Patineta · Tele CRT (elevador del Callejón, escalera del pilar central, cerca de láseres en Reciclaje)"],["03 · Terradomo","Flores (ramas sobre el elevador) · Globos (Ecorrecreación) · Columpio (Lab. de geología) · 1 más"],["04 · Minas de Lunum","3 REM: bajo la escalera de la Entrada, Almacén y Sitio de excavación"],["06 · Puerto Central","3 REM a lo largo del puerto y laboratorios"]];
+  var r='<tr><th>Sector</th><th>REM</th></tr>';rem.forEach(function(x){r+='<tr><td><b>'+x[0]+'</b></td><td>'+x[1]+'</td></tr>';});
+  document.getElementById("remTbl").innerHTML=r;
+  var rz=[["02 · Matriz","Distrito comercial","Oleadas en una sola arena","Lúnum puro"],["02 · Matriz","Distrito empresarial","Oleadas","Lúnum puro + Refinería portátil"],["03 · Terradomo","Fábrica de plantas (sala A del set 3)","2 Lanceros + Araña","Lúnum puro"],["03 · Terradomo","Centro de ecorrecreación","Lanceros, Inhibidores, Trituradores, Vigías","Daño colateral + lúnum puro"],["03 · Terradomo","Terrario (antes del jefe)","Oleadas","Lúnum puro + extensor de memoria"],["03 · Terradomo","Zona oscura (al volver en el sector 4)","Acechadores + Bombardero","Lúnum puro + extensor"],["04 · Minas","Almacén / Sitio de excavación","Caminantes, Mk. II, 3 Lanceros","Lúnum puro + extensor"],["04 · Minas","Torre Nexus (con Depuración)","2 oleadas","Lúnum puro + Economize"],["06 · Puerto","Laboratorio de regolito","Asaltante aéreo y aéreos","2 lúnum puro + Cursed"],["06 · Puerto","Laboratorio de fibraluna","Ejecutor, Bombardero, Lanceros","Lúnum puro"]];
+  var z='<tr><th>Sector</th><th>Ubicación</th><th>Enemigos</th><th>Recompensa</th></tr>';rz.forEach(function(x){z+='<tr><td><b>'+x[0]+'</b></td><td>'+x[1]+'</td><td>'+x[2]+'</td><td>'+x[3]+'</td></tr>';});
+  document.getElementById("rzTbl").innerHTML=z;
+})();
+
+/* ================= EFECTOS: escena pixel art + fibraluna ================= */
+(function(){
+var reduce=window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches;
+var P={k:"#05080f",n:"#0d1626",w:"#d9e4f2",W:"#ffffff",g:"#8a97ab",d:"#4a5568",s:"#aab8cc",c:"#39d0ff",C:"#b9f2ff",b:"#1e6fb0",B:"#0b2a52",G:"#3f9d6a",L:"#8be0a4",y:"#ffcf5a",o:"#f0902a",r:"#ff4d6d",R:"#a3122f",p:"#8a5cf0",t:"#6b4a2b"};
+var SPR={
+ earth:["...bbbb...","..bbGGbb..",".bbGGGbbb.","bbbGGbbbbb","bbbbbbGGbb","bbbbbGGGbb",".bbbbbGGb.","..bbbbbb..","...bbbb..."],
+ walker:["..ssss....",".swwwws...",".swccws...",".ssssss...","..dssd....","..d..d....",".dd..dd..."],
+ panel:["cCcCcCcCcC","CcCcCcCcCc","cCcCcCcCcC","CcCcCcCcCc","....dd....","....dd....","...dddd..."],
+ sky:["..dddd....","..dccd....","..dddd....","..dccd....","..dddd....","..dccd....","..dddd....","..dccd....","..dddd...."],
+ tree:["...GGGG...","..GGLGGG..",".GGGGGLGG.","GGLGGGGGGG",".GGGGLGGG.","..GGGGGG..","....tt....","....tt....","...tttt..."],
+ crane:["yyyyyyyyyy","y.......y.","y.......d.","y.......d.","y......sss","y.........","y.........","yy........"],
+ rock:["..ggg...",".gssgg..","gsggsgg.","ggsgggg.",".ggggg..","..ggg..."],
+ tube:["..CCCC..",".C....C.",".C.cc.C.",".C.cc.C.",".C.rr.C.",".C....C.","..dddd..","..dddd.."],
+ filament:["r.....r...",".r...r.r..","..r.r...r.","...r.....r","..r.r.....",".r...r...."],
+ tower:["....c.....","...ddd....","...dcd....","...ddd....","...dcd....","..ddddd...","...dcd....","...ddd....","..ddddd..."],
+ cube:["..cccc..",".cCCCCc.","cCWWWWCc","cCWccWCc","cCWccWCc","cCWWWWCc",".cCCCCc.","..cccc.."]
+};
+function spr(ctx,n,x,y,s,flip){var a=SPR[n];if(!a)return;for(var r=0;r<a.length;r++){var row=a[r];for(var c=0;c<row.length;c++){var ch=row[c];if(ch==="."||ch===" ")continue;ctx.fillStyle=P[ch];var cx=flip?(row.length-1-c):c;ctx.fillRect(Math.round(x+cx*s),Math.round(y+r*s),s,s);}}}
+var TH=[
+ {n:"Prólogo",sky:["#05080f","#13233d"],g:"moon",s:["walker"],earth:1,fx:"motes"},
+ {n:"Planta de energía solar",sky:["#05080f","#1d2f4a"],g:"moon",s:["panel","panel","walker"],earth:1,fx:"motes"},
+ {n:"Planta de energía solar",sky:["#05080f","#1d2f4a"],g:"moon",s:["panel","walker","panel"],earth:1,fx:"motes"},
+ {n:"Planta de energía solar",sky:["#05080f","#2a2a44"],g:"moon",s:["walker","panel"],earth:1,fx:"motes"},
+ {n:"Matriz de producción en masa",sky:["#0a0f1e","#2a3550"],g:"city",s:["walker","cube"],earth:0,fx:"glitch"},
+ {n:"Matriz de producción en masa",sky:["#0a0f1e","#2a3550"],g:"city",s:["cube","cube"],earth:0,fx:"glitch"},
+ {n:"Matriz de producción en masa",sky:["#0a0f1e","#2a3550"],g:"city",s:["walker","walker"],earth:0,fx:"glitch"},
+ {n:"Matriz de producción en masa",sky:["#0a0f1e","#3a3050"],g:"city",s:["cube","walker","cube"],earth:0,fx:"glitch"},
+ {n:"Terradomo",sky:["#0b1a1a","#1f4a3a"],g:"dome",s:["tree","tree"],earth:0,fx:"spores"},
+ {n:"Terradomo",sky:["#0b1a1a","#1f4a3a"],g:"dome",s:["tree","walker","tree"],earth:0,fx:"spores"},
+ {n:"Terradomo",sky:["#0b1418","#1a3a3a"],g:"dome",s:["tree","tree","tree"],earth:0,fx:"spores"},
+ {n:"Terradomo",sky:["#0b1a1a","#2f5a3a"],g:"dome",s:["tree","walker"],earth:0,fx:"spores"},
+ {n:"Minas de Lunum",sky:["#05080f","#1c1a22"],g:"mine",s:["crane","rock"],earth:1,fx:"float"},
+ {n:"Minas de Lunum",sky:["#05080f","#1c1a22"],g:"mine",s:["rock","walker","rock"],earth:1,fx:"float"},
+ {n:"Minas de Lunum",sky:["#05080f","#241a1a"],g:"mine",s:["crane","rock","rock"],earth:1,fx:"float"},
+ {n:"Pragmática Experimental",sky:["#0f141e","#2a3346"],g:"lab",s:["tube","filament","tube"],earth:0,fx:"dead"},
+ {n:"Puerto Central",sky:["#05080f","#1a2440"],g:"port",s:["tower","filament"],earth:1,fx:"dead"},
+ {n:"Puerto Central",sky:["#05080f","#2a1830"],g:"port",s:["filament","tower","filament"],earth:1,fx:"dead"},
+ {n:"Elevador orbital",sky:["#05080f","#3a1428"],g:"port",s:["tower"],earth:2,fx:"dead"},
+ {n:"Rumbo a la Tierra",sky:["#0a1a3a","#3f7bc0"],g:"moon",s:["walker"],earth:3,fx:"motes"}
+];
+var cv=document.getElementById("sceneCv");if(!cv)return;
+var ctx=cv.getContext("2d");ctx.imageSmoothingEnabled=false;var W=cv.width,H=cv.height,th=TH[0],t=0,parts=[],stars=[];
+function sd(n){var x=Math.sin(n*91.7)*43758.5;return x-Math.floor(x);}
+for(var i=0;i<40;i++)stars.push([sd(i)*W|0,sd(i+50)*H*.6|0,sd(i+99)]);
+function mix(a,b,f){var x=parseInt(a.slice(1),16),y=parseInt(b.slice(1),16);function ch(s){return((x>>s)&255)+((((y>>s)&255)-((x>>s)&255))*f);}return"rgb("+(ch(16)|0)+","+(ch(8)|0)+","+(ch(0)|0)+")";}
+function mk(){parts=[];for(var i=0;i<26;i++)parts.push({x:Math.random()*W,y:Math.random()*H,v:.08+Math.random()*.25,p:Math.random()*6});}
+function sky(){for(var i=0;i<8;i++){ctx.fillStyle=mix(th.sky[0],th.sky[1],i/7);ctx.fillRect(0,(i*H/8)|0,W,(H/8|0)+1);}
+ stars.forEach(function(s){if(th.g==="dome"||th.g==="lab")return;ctx.fillStyle=(Math.sin(t/20+s[2]*9)>.5)?P.W:P.s;ctx.fillRect(s[0],s[1],1,1);});
+ if(th.earth){var x=W-26,y=8,s=th.earth===3?3:2;if(th.earth===3){x=W/2-15;y=4;}spr(ctx,"earth",x,y,s);if(th.earth===2){ctx.fillStyle="rgba(255,77,109,.35)";ctx.fillRect(x,y,20,18);}}}
+function ground(){var y=H-12;ctx.fillStyle=P.n;
+ if(th.g==="moon"||th.g==="mine"){ctx.fillStyle="#2a3344";ctx.fillRect(0,y,W,12);ctx.fillStyle="#3a4558";for(var x=0;x<W;x+=6){var h=Math.floor(sd(x)*3);ctx.fillRect(x,y-h,6,h+1);}
+  ctx.fillStyle="#1d2533";[[20,y+4],[70,y+6],[130,y+3],[165,y+7]].forEach(function(c){ctx.fillRect(c[0],c[1],6,2);});
+  if(th.g==="mine"){ctx.fillStyle=P.n;ctx.fillRect(0,0,W,4);for(var x=0;x<W;x+=5){ctx.fillRect(x,4,5,Math.floor(sd(x+3)*6));}}}
+ else if(th.g==="city"){for(var x=0;x<W;x+=10){var h=14+Math.floor(sd(x)*30);ctx.fillStyle=P.n;ctx.fillRect(x,y-h,10,h+12);for(var wy=y-h+3;wy<y-2;wy+=4){for(var wx=x+2;wx<x+9;wx+=3){if(sd(wx*wy)>.55){ctx.fillStyle=(sd(wx+wy+((t/30)|0))>.97)?P.r:P.y;ctx.fillRect(wx,wy,1,2);}}}}
+  if(t%50<4){ctx.fillStyle="rgba(57,208,255,.5)";ctx.fillRect((sd(t)*W)|0,(y-30+sd(t+1)*20)|0,16,2);}}
+ else if(th.g==="dome"){ctx.strokeStyle="rgba(185,242,255,.35)";ctx.beginPath();ctx.arc(W/2,H+40,110,Math.PI,2*Math.PI);ctx.stroke();for(var k=-3;k<=3;k++){ctx.beginPath();ctx.moveTo(W/2,H-70);ctx.lineTo(W/2+k*34,H);ctx.stroke();}
+  ctx.fillStyle="#173a2a";ctx.fillRect(0,y,W,12);ctx.fillStyle="#24563c";for(var x=0;x<W;x+=3){ctx.fillRect(x,y-Math.floor(sd(x)*3),2,3);}}
+ else if(th.g==="lab"){ctx.fillStyle="#c9d4e4";ctx.fillRect(0,y,W,12);ctx.fillStyle="#9aa8bd";for(var x=0;x<W;x+=16)ctx.fillRect(x,y,1,12);ctx.fillStyle="#1a2232";ctx.fillRect(0,0,W,6);for(var x=10;x<W;x+=30){ctx.fillStyle=(t/8|0)%7===(x/30|0)%7?P.r:P.C;ctx.fillRect(x,6,12,1);}}
+ else if(th.g==="port"){ctx.fillStyle="#2a3344";ctx.fillRect(0,y,W,12);ctx.fillStyle=P.d;ctx.fillRect(W/2-2,0,4,y);for(var yy=4;yy<y;yy+=8){ctx.fillStyle=((yy+t)%32<4)?P.c:P.g;ctx.fillRect(W/2-4,yy,8,1);}
+  ctx.fillStyle=P.n;ctx.fillRect(W/2-16,y-10,32,10);}}
+function fx(){parts.forEach(function(p){var col=null;
+ if(th.fx==="motes"||th.fx==="float"){p.y-=p.v;p.x+=Math.sin(t/25+p.p)*.15;col=(Math.sin(t/12+p.p)>0)?P.C:P.c;}
+ else if(th.fx==="glitch"){p.y-=p.v*.6;col=(sd(p.p+((t/6)|0))>.85)?P.r:P.c;}
+ else if(th.fx==="spores"){p.y-=p.v*.5;p.x+=Math.sin(t/18+p.p)*.25;col=P.L;}
+ else if(th.fx==="dead"){p.y+=p.v*.3;p.x+=Math.sin(t/14+p.p)*.3;col=(p.p>3)?P.r:P.C;}
+ if(p.y<0){p.y=H;p.x=Math.random()*W;}if(p.y>H){p.y=0;p.x=Math.random()*W;}
+ ctx.fillStyle=col;ctx.fillRect(p.x|0,p.y|0,1,1);if(Math.sin(t/9+p.p)>.85){ctx.fillStyle="rgba(185,242,255,.35)";ctx.fillRect((p.x|0)-1,p.y|0,3,1);ctx.fillRect(p.x|0,(p.y|0)-1,1,3);}});}
+function sprites(){var n=th.s.length,gap=W/(n+1);th.s.forEach(function(s,i){
+ var sc=(s==="walker"||s==="filament"||s==="sky")?2:3,bob=0,x=Math.round(gap*(i+1)-SPR[s][0].length*sc/2),y=H-12-(SPR[s].length*sc);
+ if(s==="walker"){x=Math.round(((t*.5+i*90)%(W+40))-20);bob=((t/6)|0)%2;spr(ctx,s,x,y+bob,2,false);return;}
+ if(s==="rock"){bob=Math.round(Math.sin(t/20+i*2)*4);y-=10;}
+ if(s==="cube"){bob=Math.round(Math.sin(t/10+i)*2);y-=14;if(((t/40)|0)%3===i%3&&t%40<6)return;}
+ if(s==="filament"){x+=Math.round(Math.sin(t/8+i)*2);}
+ if(s==="sky"){x=W/2-8;y=H-12-18;}
+ spr(ctx,s,x,y+bob,sc,false);});}
+function frame(){ctx.clearRect(0,0,W,H);sky();fx();ground();sprites();t++;}
+function curI(){var d=[];try{d=JSON.parse(localStorage.getItem("prg-steps")||"[]");}catch(e){}for(var i=0;i<19;i++){if(d.indexOf(i)<0)return i;}return 19;}
+function setTheme(){var i=curI();th=TH[i];mk();var s=steps[i];
+ document.getElementById("sceneLbl").textContent=i<19?("Tramo "+(i+1)+" · "+th.n):"Rumbo a la Tierra";
+ document.getElementById("sceneSub").textContent=i<19?("Objetivo: "+s.goal):"Historia completada. ¡Gracias por jugar!";
+ if(reduce)frame();}
+setTheme();document.addEventListener("prg:progress",setTheme);
+var vis=true;document.addEventListener("visibilitychange",function(){vis=!document.hidden;});
+var last=0;function loop(ts){requestAnimationFrame(loop);if(!vis||ts-last<66)return;last=ts;frame();}
+if(reduce){frame();return;}requestAnimationFrame(loop);
+
+/* ---- Fibraluna flotando en toda la página ---- */
+var mc=document.getElementById("motesCv"),m=mc.getContext("2d"),motes=[],dpr=Math.min(window.devicePixelRatio||1,2);
+function rs(){mc.width=innerWidth*dpr;mc.height=innerHeight*dpr;m.setTransform(dpr,0,0,dpr,0,0);}rs();addEventListener("resize",rs);
+var N=innerWidth<600?14:26;
+function nm(burst,x,y){return{x:burst?x:Math.random()*innerWidth,y:burst?y:innerHeight+Math.random()*innerHeight,r:.8+Math.random()*1.8,v:burst?(.6+Math.random()*1.6):(.15+Math.random()*.45),vx:burst?(Math.random()-.5)*2.4:0,ph:Math.random()*6,life:burst?120+Math.random()*60:-1,hue:Math.random()<.18?"255,207,90":(Math.random()<.5?"185,242,255":"57,208,255")};}
+for(var k=0;k<N;k++){var o=nm();o.y=Math.random()*innerHeight;motes.push(o);}
+var strand=null,tm=0,lastM=0;
+function mloop(ts){requestAnimationFrame(mloop);if(!vis||ts-lastM<33)return;lastM=ts;tm++;
+ m.clearRect(0,0,innerWidth,innerHeight);m.globalCompositeOperation="lighter";
+ motes.forEach(function(o){o.y-=o.v;o.x+=Math.sin(tm/40+o.ph)*.3+o.vx;o.vx*=.97;var tw=.45+.55*Math.abs(Math.sin(tm/30+o.ph));
+  var g=m.createRadialGradient(o.x,o.y,0,o.x,o.y,o.r*5);g.addColorStop(0,"rgba("+o.hue+","+(.55*tw)+")");g.addColorStop(1,"rgba("+o.hue+",0)");
+  m.fillStyle=g;m.beginPath();m.arc(o.x,o.y,o.r*5,0,6.283);m.fill();m.fillStyle="rgba(255,255,255,"+(.8*tw)+")";m.beginPath();m.arc(o.x,o.y,o.r*.6,0,6.283);m.fill();
+  if(o.life>0)o.life--;});
+ motes=motes.filter(function(o){if(o.life===0)return false;if(o.y<-20){if(o.life>0)return false;Object.assign(o,nm());}return true;});
+ if(!strand&&Math.random()<.004){strand={x:Math.random()*innerWidth,y:Math.random()*innerHeight*.7,a:0,len:80+Math.random()*120,ang:Math.random()*6.28};}
+ if(strand){strand.a+=1;var al=Math.sin(strand.a/60*Math.PI);if(strand.a>60)strand=null;else{m.strokeStyle="rgba(185,242,255,"+(.35*al)+")";m.lineWidth=1;m.beginPath();m.moveTo(strand.x,strand.y);m.quadraticCurveTo(strand.x+Math.cos(strand.ang)*strand.len*.5+20,strand.y+Math.sin(strand.ang)*strand.len*.5-20,strand.x+Math.cos(strand.ang)*strand.len,strand.y+Math.sin(strand.ang)*strand.len);m.stroke();}}
+ m.globalCompositeOperation="source-over";}
+requestAnimationFrame(mloop);
+cv.addEventListener("click",function(e){var r=cv.getBoundingClientRect();for(var k=0;k<18;k++)motes.push(nm(true,e.clientX||r.left+r.width/2,e.clientY||r.top+r.height/2));});
+})();
+</script>
+</body>
+</html>
